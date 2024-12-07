@@ -1,6 +1,7 @@
-FROM node:16
+FROM node:alpine
 
 WORKDIR /app
+COPY package*.json ./
 ENV PORT 8080
 ENV HOST 0.0.0.0
 
